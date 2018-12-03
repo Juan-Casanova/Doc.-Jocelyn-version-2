@@ -13,15 +13,15 @@ body{
 
 #imagen_nav img{
     
-    margin-left: 25px;
-    height: 75px;
-    width: 250px;
+    margin-left: 5%;
+    height: 7%;
+    width: 75%;
     
 }
 
 #form_nav{
     
-    margin-top: 30px;
+    margin-top: 2%;
     background-color: white;
 }
 #button_nav_1 a{
@@ -31,7 +31,7 @@ body{
 
 #button_nav_1{
     background-color:  rgb(178,171,96,1);
-    font-size: 25px;
+    font-size: 150%;
     color:white;
    
 }
@@ -39,24 +39,24 @@ body{
 #button_nav{
     
     color:white;
-    margin: 20px;   
+    margin: 5%;   
     background-color: rgb(178,171,96,1);
 }
 
 #button_nav_img{
     
     color:white;      
-    height: 64px;
-    width: 75px;
+    height: 20%;
+    width: 30%;
     background-color: white;
-    margin-right: 20px;
 }
 
 #trazo{
+    color:rgb(178,171,96,1); 
     width: 100%;
-    height: 10px;
+    height: 3%;
     background-color: rgb(178,171,96,1);
-    margin-top: 110px;
+    margin-top: 7%;
 }
 /* 
 article{
@@ -73,7 +73,6 @@ article{
 
 #l{
     width: 100%;
-    
     background-color: white; 
     color: white;   
 }
@@ -89,7 +88,7 @@ article{
 
 #margin_img{
     width: 75%;
-    height: 90%;
+    height: 75%;
     margin-top: 5%;
     margin-left: 12.5%;
     margin-bottom: 5%;
@@ -99,12 +98,13 @@ article{
 
 #p_form{
     background-color: rgb(178,171,96,1);
-    font-size: 30px;
+    font-size: 200%;
     text-align: center;
+    color: white;
 }
 #trazo1{
     width: 100%;
-    font-size: 30px;
+    font-size: 200%;
     text-align: center;
     color: white;
     background-color: rgb(178,171,96,1);
@@ -118,12 +118,12 @@ article{
     margin: 0;
     background-color: white;
     color: black;
-    font-size: 30px;
+    font-size: 250%;
 }
 #trazo2{
     margin-top: 3%;
     width: 100%;
-    font-size: 30px;
+    font-size: 200%;
     text-align: center;
     color: white;
     background-color: rgb(178,171,96,1);
@@ -133,8 +133,7 @@ article{
 #map{
     
     width: 100%;
-    height: 00px;
-    font-size: 30px;
+    font-size: 250%;
     text-align: center;
     color: white;
     
@@ -149,12 +148,13 @@ article{
 }
 
 #z>img{
-    height: ;
+   
 }
 
 #pargen{
     margin-left: 5%;
     margin-right: 5%;
+    text-align: center;
 }
 #parcen{
     margin-left: 40%;
@@ -164,7 +164,7 @@ agm-map{
     height:500px ;
 }
 #comen{
-    margin-top: 2%;
+    margin-top: 1%;
     margin-left: 12.5%;
 }
 .nombre-coment{
