@@ -1,0 +1,81 @@
+body{
+    background-color: white;
+    width: auto;
+    margin:0;
+    padding: 0;
+}
+
+#nav{
+    margin: 0;
+    
+    padding: 0;
+}
+
+#imagen_nav img{
+    
+    margin-left: 25px;
+    height: 75px;
+    width: 250px;
+    
+}
+#form_nav{
+    
+    margin-top: 30px;
+    background-color: white;
+}
+#button_nav_1 a{
+    color: white;
+    background-color:  rgb(178,171,96,1);
+}
+
+#button_nav_1{
+    background-color:  rgb(178,171,96,1);
+    font-size: 25px;
+    color:white;
+   
+}
+
+#button_nav{
+    
+    color:white;
+    margin: 20px;   
+    background-color: rgb(178,171,96,1);
+}
+
+#button_nav_img{
+    
+    color:white;      
+    height: 64px;
+    width: 75px;
+    background-color: white;
+    margin-right: 20px;
+}
+
+#trazo{
+    width: 100%;
+    height: 10px;
+    background-color: rgb(178,171,96,1);
+    margin-top: 8%;
+}
+#p_form{
+    background-color: rgb(178,171,96,1);
+    font-size: 30px;
+    text-align: center;
+}
+form{
+    text-align: center;
+    margin:3%;
+}
+label{
+    font-weight: bold;
+    font-size: 150%;
+}
+#mensaje{
+    margin-left: 25%;
+    margin-top: 5%;    
+}
+
+#ref{
+    text-decoration: null;
+    color: white;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-light fixed-top" id="nav" style="background-color: #ffffff;">
+        <a class="navbar-brand" id="imagen_nav"><img src="https://res.cloudinary.com/consultorio-dental/image/upload/v1542915252/logo_Mesa_de_trabajo_1.png" alt="no funciona galan"></a>
+        
+        <form class="form-inline" id="form_nav">
+          <button class="btn btn-outline-success my-2 my-sm-0" id="button_nav_1" type="submit"><a href="https://www.google.com.mx/maps/place/Dra.+Jocelyn+Jim%C3%A9nez/@20.5969379,-100.3757306,18z/data=!4m5!3m4!1s0x0:0xe5f77b2b27ffa792!8m2!3d20.5985648!4d-100.3762375">Calzada Pathé 78 Col. Pathé, Qro.</a></button>
+        </form>
+  
+        <form class="form-inline" id="form_nav">
+          <button class="btn btn-outline" id="button_nav_1" type="submit"><a href="https://calendar.google.com/calendar?cid=Y2FzYW5vdmFqbTE5OTYyMUBnbWFpbC5jb20">Agendar Cita</a></button>
+          <a href="https://api.whatsapp.com/send?phone=4422855608&text=Hola,necesito una cotizacion"><img class="btn btn-outline" id="button_nav_img" src="https://res.cloudinary.com/consultorio-dental/image/upload/c_scale,w_256/v1541637238/2.png" alt="falla el wats papa"></a>
+          <a href="https://www.facebook.com/Marketing-Digital-Empresarial-333729824076529/?modal=admin_todo_tour"><img class="btn btn-outline" id="button_nav_img"src="https://res.cloudinary.com/consultorio-dental/image/upload/v1541637238/icono.png" alt="face falla papa"></a>
+        </form> 
+    </nav>
+  
+    <div class="col-sm-12" id="trazo"></div>
+
+    <article>
+        <div class="col-sm-6 border rounded" id="mensaje">
+            <form (ngSubmit)="ComentarioForm($event)" id="margin_img">
+                <p id="p_form">Complete los campos para ponernos en contacto</p>
+                <div class="form-group">
+                <label>Nombre</label>
+                <input type="text" class="form-control" name='nombre' [(ngModel)]='nombre' placeholder="Jose">
+                </div>
+                <div class="form-group">
+                <label>Del 1 al 5 ¿Que calificacion le otorga al servicio prestado?</label>
+                <input type="text" class="form-control" name="calificacion"  [(ngModel)]='calificacion'>
+                </div>
+                <div class="form-group">
+                <label>Comentario que quiera agregar</label>
+                <textarea class="form-control" cols="30" rows="6" name="mensaje" [(ngModel)]='mensaje'></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button> 
+            </form>
+        </div>
+    </article>
+</body>
+</html>

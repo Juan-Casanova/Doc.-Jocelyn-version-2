@@ -1,0 +1,19 @@
+#trazo{
+    width: 100%;
+    height: 10px;
+    background-color: rgb(178,171,96,1);
+    margin-top: 200px;
+}
+#comen{
+    margin-top: 2%;
+    margin-left: 12.5%;
+}
+.nombre-coment{
+    font-weight: bold;
+    font-size: 350%;
+    text-transform: uppercase;
+}
+
+.coment-coment{
+    font-size: 200%;
+}

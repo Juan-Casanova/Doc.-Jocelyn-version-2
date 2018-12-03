@@ -1,0 +1,182 @@
+body{
+    background-color: white;
+    width: auto;
+    margin:0;
+    padding: 0;
+}
+
+#nav{
+    margin: 0;
+    
+    padding: 0;
+}
+
+#imagen_nav img{
+    
+    margin-left: 25px;
+    height: 75px;
+    width: 250px;
+    
+}
+
+#form_nav{
+    
+    margin-top: 30px;
+    background-color: white;
+}
+#button_nav_1 a{
+    color: white;
+    background-color:  rgb(178,171,96,1);
+}
+
+#button_nav_1{
+    background-color:  rgb(178,171,96,1);
+    font-size: 25px;
+    color:white;
+   
+}
+
+#button_nav{
+    
+    color:white;
+    margin: 20px;   
+    background-color: rgb(178,171,96,1);
+}
+
+#button_nav_img{
+    
+    color:white;      
+    height: 64px;
+    width: 75px;
+    background-color: white;
+    margin-right: 20px;
+}
+
+#trazo{
+    width: 100%;
+    height: 10px;
+    background-color: rgb(178,171,96,1);
+    margin-top: 110px;
+}
+/* 
+article{
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    height: 1500px;
+    color: white;
+} */
+
+#j{
+    width: 100%;  
+}
+
+#l{
+    width: 100%;
+    
+    background-color: white; 
+    color: white;   
+}
+
+ #carouselExampleIndicators{
+    background-color:white;
+
+} 
+
+.col-sm-6{
+    background-color: white;
+}
+
+#margin_img{
+    width: 75%;
+    height: 90%;
+    margin-top: 5%;
+    margin-left: 12.5%;
+    margin-bottom: 5%;
+    color:black;
+   
+}
+
+#p_form{
+    background-color: rgb(178,171,96,1);
+    font-size: 30px;
+    text-align: center;
+}
+#trazo1{
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    background-color: rgb(178,171,96,1);
+}
+#ñ{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#presentacion{
+    margin: 0;
+    background-color: white;
+    color: black;
+    font-size: 30px;
+}
+#trazo2{
+    margin-top: 3%;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    background-color: rgb(178,171,96,1);
+    /* background-color: black; */
+}
+
+#map{
+    
+    width: 100%;
+    height: 00px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    
+    /* background-color: black; */
+}
+#z
+{
+    width: 100%;
+    color: black;
+    font-size: 350%;
+    text-align: center;
+}
+
+#z>img{
+    height: ;
+}
+
+#pargen{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#parcen{
+    margin-left: 40%;
+}
+agm-map{
+   padding: 0;
+    height:500px ;
+}
+#comen{
+    margin-top: 2%;
+    margin-left: 12.5%;
+}
+.nombre-coment{
+    font-weight: bold;
+    font-size: 350%;
+    text-transform: uppercase;
+}
+
+.coment-coment{
+    font-size: 200%;
+}
+
+#carta{
+    height: 35%;
+}
