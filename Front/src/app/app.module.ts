@@ -38,7 +38,8 @@ const routes:Routes=[
     FormsModule,
     RouterModule.forRoot(routes),
     AgmCoreModule.forRoot({
-      apiKey:'AIzaSyAdZXa2z_LzhgpkN-eqGuM73-fTOIl1T9c'
+      apiKey:'AIzaSyDqXBoVB-9QVLxpoZBW7rkqs6PB7x_8wKM'
+      
     })
   ],
   providers: [ComentariosService],
