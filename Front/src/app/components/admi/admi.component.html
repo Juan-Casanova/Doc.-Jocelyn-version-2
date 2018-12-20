@@ -8,17 +8,71 @@
 </head>
 <body>
    <!-- <nav class="navbar navbar-black bg-black" id="nav"> -->
-  <nav class="navbar navbar-light fixed-top" id="nav" style="background-color: #ffffff;">
-      <a class="navbar-brand" id="imagen_nav"><img src="https://res.cloudinary.com/consultorio-dental/image/upload/v1542915252/logo_Mesa_de_trabajo_1.png" alt="no funciona galan"></a>
-      
-      
-  </nav>
+    <nav id="navbar" class="nav justify-content-center fixed-top col-xs-12">
+        <li class="nav-item">
+         <div id="boton-direccion-logo"> <a class="nav-link" id="a-logo" href="#"><img id="imagen-logo" src="https://res.cloudinary.com/consultorio-dental/image/upload/v1542915252/logo.png" alt="logo"></a></div>
+        </li>
+        <li class="nav-item">
+          <button class="btn nav-link" id="boton-direccion"><a id="link-direccion" href="https://www.google.com.mx/maps/place/Dra.+Jocelyn+Jim%C3%A9nez/@20.5969379,-100.3757306,18z/data=!4m5!3m4!1s0x0:0xe5f77b2b27ffa792!8m2!3d20.5985648!4d-100.3762375">Calzada Pathé 78 Col. Pathé, Qro.</a></button>
+        </li>
+        <li class="nav-item ">
+          <button class="btn nav-link" id="botones-redes-2"><a class="nav-link" id="link-redes"  href="#">Agendar Cita</a></button>
+        </li>
+        <li class="nav-item ">
+          <button class="btn nav-link" id="botones-redes"><a class="nav-link" id="link-redes"  href="https://www.facebook.com/Dentistas-en-Queretaro-745467918888663/"><i class="fa fa-facebook"></i></a></button>
+        </li>
+        <li class="nav-item ">  
+          <button class="btn nav-link" id="botones-redes"><a class="nav-link" id="link-redes"  href="https://api.whatsapp.com/send?phone=44 23758253&text=Hola, Buen dia"><i class="fa fa-whatsapp"></i></a></button>
+        </li>
+      </nav>
 
   <div class="col-sm-12" id="trazo"></div>
 
+  <table class="col-xs-12" id="comen">
+   
+    <tr *ngFor="let comentario of comentarios">
+        <ng-template [ngIf]="comentario.Calificacion>=5">
+            <td><img id="imagen-estrellitas" src="https://res.cloudinary.com/consultorio-dental/image/upload/c_scale,w_400/v1543664444/5estrellas.png" alt="5"></td>
+          
+          <td class="nombre-coment">{{comentario.NombreCliente}}</td>
+          <br>      
+          <td id="comentario"class="coment-coment">{{comentario.Comentario}}</td>
+          <td><button class="btn btn-danger" (click)="deleteComentario(comentario._id)"><i class="fa fa-trash"></i></button></td>
+        </ng-template>
+        <ng-template [ngIf]="comentario.Calificacion==4">
+              <td><img id="imagen-estrellitas" src="https://res.cloudinary.com/consultorio-dental/image/upload/c_scale,w_400/v1543664443/4.png" alt="4"></td>
+            <td class="nombre-coment">{{comentario.NombreCliente}}</td>
+            <br>      
+            <td id="comentario" class="coment-coment">{{comentario.Comentario}}</td>     
+            <td><button class="btn btn-danger" (click)="deleteComentario(comentario._id)"><i class="fa fa-trash"></i></button></td> 
+        </ng-template>
+        <ng-template [ngIf]="comentario.Calificacion==3">
+              <td><img id="imagen-estrellitas" src="https://res.cloudinary.com/consultorio-dental/image/upload/c_scale,w_400/v1543664443/3.png" alt="3"></td>
+            <td class="nombre-coment">{{comentario.NombreCliente}}</td>
+            <br>      
+            <td id="comentario" class="coment-coment">{{comentario.Comentario}}</td>  
+            <td><button class="btn btn-danger" (click)="deleteComentario(comentario._id)"><i class="fa fa-trash"></i></button></td>      
+        </ng-template>
+        <ng-template [ngIf]="comentario.Calificacion==2">
+              <td><img id="imagen-estrellitas" src="https://res.cloudinary.com/consultorio-dental/image/upload/c_scale,w_400/v1543664443/20.png" alt="2"></td>
+            <td class="nombre-coment">{{comentario.NombreCliente}}</td>
+            <br>      
+            <td id="comentario" class="coment-coment">{{comentario.Comentario}}</td>    
+            <td><button class="btn btn-danger" (click)="deleteComentario(comentario._id)"><i class="fa fa-trash"></i></button></td>   
+        </ng-template>
+        <ng-template [ngIf]="comentario.Calificacion==1">
+              <td><img id="imagen-estrellitas" src="https://res.cloudinary.com/consultorio-dental/image/upload/c_scale,w_400/v1543664442/1.png" alt="1"></td>
+            <td class="nombre-coment">{{comentario.NombreCliente}}</td>
+            <br>      
+            <td id="comentario" class="coment-coment">{{comentario.Comentario}}</td>  
+            <td><button class="btn btn-danger" (click)="deleteComentario(comentario._id)"><i class="fa fa-trash"></i></button></td>     
+        </ng-template>
 
-  
-<article>
+    </tr>
+    
+  </table>
+
+<!-- <article>
     <table class="col-sm-9" id="comen">
    
         <tr *ngFor="let comentario of comentarios">
@@ -55,11 +109,11 @@
                 <td class="coment-coment">{{comentario.Comentario}}</td>       
             </ng-template>
     
-            <!-- <div #second>NO ES BUENO</div> -->
+           
         </tr>
         
       </table>
-</article>
+</article> -->
   
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

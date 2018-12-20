@@ -1,4 +1,300 @@
-/* You can add global styles to this file, and also import other style files */
-body{
-    width: auto;
+@media (min-width: 200px)
+{
+    body{
+        width: 100%;
+        background-color: white;
+    }
+    #navbar{
+        background-color: white;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: 25%;
+    }
+    .nav-item{
+        margin: 0;
+    }
+    #a-logo{
+        margin:0;
+    }
+    #imagen-logo{
+        background-color: white;
+        width: 35%; 
+        margin-left: 30%
+    }
+    
+    #boton-direccion-logo{
+        
+        /* text-align: center; */
+        background-color:white;
+        margin: 0;
+    }
+
+    #boton-direccion{
+        
+        /* text-align: center; */
+        background-color:white;
+        margin: 0;
+    }
+
+    #link-direccion{
+        margin: 0;
+        color: black;
+        font-weight: bold;
+    }
+
+    #botones-redes{
+        background-color:rgb(178,171,96,1);
+        color: white;
+        font-weight: bold;
+
+    }
+    #botones-redes-2{
+        background-color:rgb(178,171,96,1);
+        color: white;
+        font-weight: bold;
+
+    }
+    #link-redes{
+        color: white;
+    }
+
+    #carrusel{
+        padding: 0;
+        margin: 0;
+        margin-top: 50%;
+    }
+    #imagen-carrusel{
+        width: 100%;
+    }
+    #div-form{
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #parrafo-form{
+        background-color: rgb(178,171,96,1);
+        color: white;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    #mensaje{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #titulo-mensaje-bloque{
+        margin-top: 1%;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        background-color: rgb(178,171,96,1);
+    }
+    
+    #titulo-mensaje{
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #parrafo-mensaje{
+        text-align: justify;
+    }
+    #div-especialidades{
+        width: 100%;
+    }
+    #boton-mas-ifo{
+        background-color: rgb(178,171,96,1);
+        color: white;
+        font-weight: bold;
+
+    }
+
+    #carta{
+        text-align: center;
+        width: 49%;
+        margin-top: 1%;
+    }
+
+    #imagen-estrellitas{
+        width: 100%;
+    }
+    .nombre-coment{
+        padding-left:15%;
+        font-weight: bold;
+    }
+    .coment-coment{
+        padding-left: 5%;
+        text-align: justify;
+        padding-right: 5%
+    }
+    #imagen-ada{
+        width: 100%;
+    }
+    agm-map {
+       
+        height: 250px;
+      }
+    #boton-direccion-pie{
+         
+        background-color:rgb(178,171,96,1);
+        text-align: center;
+        color: white;
+    }
+
+    #link-direccion-pie{
+        color: white;
+        font-weight: bold;
+    }
 }
+
+@media (min-width: 576px)
+{
+    #navbar{
+        background-color: white;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: 10%;
+    }
+
+    #imagen-logo{
+        background-color: white;
+        width: 50%; 
+        margin: 0;
+        margin-left: 25%;
+    }
+    /* #a-logo{
+        width: 250px;
+    } */
+    #carrusel{
+        padding: 0;
+        margin: 0;
+        margin-top: 37%;
+    }
+    .nombre-coment{
+        padding-left:15%;
+        font-weight: bold;
+    }
+    .coment-coment{
+        padding-left: 11%;
+        text-align: justify;
+        padding-right: 5%
+    }
+    #imagen-ada{
+        width: 100%;
+        margin: 0;
+    }
+    agm-map {
+       
+        height: 500px;
+    }
+}
+
+@media (min-width: 768px)
+{
+    #imagen-logo{
+        background-color: white;
+        width: 70%; 
+        margin: 0;
+    }
+    #carrusel{
+        padding: 0;
+        margin: 0;
+        margin-top: 27%;
+    }
+    #boton-direccion{
+        
+        text-align: center;
+        background-color:white;
+        margin-top: 20%;
+    }
+    #botones-redes{
+        background-color:rgb(178,171,96,1);
+        color: white;
+        font-weight: bold;
+        margin-top: 25%;
+
+    }
+    #botones-redes-2{
+        background-color:rgb(178,171,96,1);
+        color: white;
+        font-weight: bold;
+        margin-top: 25%;
+
+    }
+}
+
+@media (min-width: 992px)
+{
+    #navbar{
+        background-color: white;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: 15%;
+    }
+    #imagen-logo{
+        background-color: white;
+        width: 40%; 
+        margin-left: 15%
+    }
+    #boton-direccion{
+        
+        /* text-align: center; */
+        background-color:white;
+        margin-top: 10%;
+    }
+    #carrusel{
+
+        width: 80%;
+        padding: 0;
+        margin-left: 10%;
+        margin-top: 8%;
+    }
+    .nombre-coment{
+        padding-left:15%;
+        font-weight: bold;
+    }
+    .coment-coment{
+        padding-left: 11%;
+        text-align: justify;
+        padding-right: 5%
+    }
+    #imagen-ada{
+        width: 100%;
+        margin: 0;
+    }
+    agm-map {
+       
+        height: 500px;
+    }
+    #botones-redes{
+        background-color:rgb(178,171,96,1);
+        color: white;
+        font-weight: bold;
+        margin-top: 15%;
+
+    }
+    #botones-redes-2{
+        background-color:rgb(178,171,96,1);
+        color: white;
+        font-weight: bold;
+        margin-top: 7%;
+
+    }
+
+}
+
+@media (min-width: 1200px)
+{
+    
+    #carrusel{
+        width: 80%;
+        padding: 0;
+        margin-left: 10%;
+        margin-top: 8%;
+    }
+}
+

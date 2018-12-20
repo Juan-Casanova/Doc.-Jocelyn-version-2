@@ -13,7 +13,8 @@ import { IndexComponent } from './components/index/index.component';
 
 import {AgmCoreModule}from '@agm/core';
 import { NewComentarioComponent } from './components/new-comentario/new-comentario.component';
-import { AdmiComponent } from './components/admi/admi.component'
+import { AdmiComponent } from './components/admi/admi.component';
+import { CalendarioComponent } from './components/calendario/calendario.component';
 
 
 const routes:Routes=[
@@ -29,7 +30,8 @@ const routes:Routes=[
     AppComponent,
     IndexComponent,
     NewComentarioComponent,
-    AdmiComponent
+    AdmiComponent,
+    CalendarioComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,7 +42,8 @@ const routes:Routes=[
     AgmCoreModule.forRoot({
       apiKey:'AIzaSyDqXBoVB-9QVLxpoZBW7rkqs6PB7x_8wKM'
       
-    })
+    }),
+    
   ],
   providers: [ComentariosService],
   bootstrap: [AppComponent]

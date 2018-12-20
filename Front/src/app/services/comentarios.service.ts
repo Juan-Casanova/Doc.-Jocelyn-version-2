@@ -8,7 +8,7 @@ import {Comentario}from '../models/Comentario';
 @Injectable()
 export class ComentariosService {
 
-  domain:string='';//http://localhost:3000
+  domain:string='http://localhost:3000';//http://localhost:3000
 
   constructor(private http:HttpClient) { }
 

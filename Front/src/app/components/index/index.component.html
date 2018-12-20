@@ -7,39 +7,22 @@
   <title>Document</title>
 </head>
 <body>
-  <!-- <nav  id="navbar" class="navbar fixed-top" style="background-color: #ffffff">
-      
-      <img  id="imagen-logo" class="col-xs-3" src="https://res.cloudinary.com/consultorio-dental/image/upload/v1542915252/logo.png" alt="imagen-logo">
-
-
-        <button  class="btn col-xs-3" id="boton-direccion" type="submit"><a id="link-direccion" href="https://www.google.com.mx/maps/place/Dra.+Jocelyn+Jim%C3%A9nez/@20.5969379,-100.3757306,18z/data=!4m5!3m4!1s0x0:0xe5f77b2b27ffa792!8m2!3d20.5985648!4d-100.3762375">Calzada Pathé 78 Col. <br> Pathé, Qro.</a></button>
-
-
-      <button  id="botones-redes" class="btn col-xs-2">
-        Agendar Cita
-      </button>
-      <button  id="botones-redes" class="btn col-xs-2">
-         <a id="link-redes" href="https://www.facebook.com/Dentistas-en-Queretaro-745467918888663/"><i class="fa fa-facebook"></i></a>
-      </button>
-      <button  id="botones-redes" class="btn col-xs-2">
-        <a id="link-redes" href="https://api.whatsapp.com/send?phone=44 23758253&text=Hola, Buen dia"><i class="fa fa-whatsapp"></i></a>
-      </button>
-  </nav> -->
+ 
   
   <nav id="navbar" class="nav justify-content-center fixed-top col-xs-12">
     <li class="nav-item">
-      <a class="nav-link" href="#"><img id="imagen-logo" src="https://res.cloudinary.com/consultorio-dental/image/upload/v1542915252/logo.png" alt="logo"></a>
+     <div id="boton-direccion-logo"> <a class="nav-link" id="a-logo" href="#"><img id="imagen-logo" src="https://res.cloudinary.com/consultorio-dental/image/upload/v1542915252/logo.png" alt="logo"></a></div>
     </li>
     <li class="nav-item">
       <button class="btn nav-link" id="boton-direccion"><a id="link-direccion" href="https://www.google.com.mx/maps/place/Dra.+Jocelyn+Jim%C3%A9nez/@20.5969379,-100.3757306,18z/data=!4m5!3m4!1s0x0:0xe5f77b2b27ffa792!8m2!3d20.5985648!4d-100.3762375">Calzada Pathé 78 Col. Pathé, Qro.</a></button>
     </li>
-    <li class="nav-item">
-      <button class="btn nav-link" id="botones-redes"><a class="nav-link" id="link-redes"  href="#">Agendar Cita</a></button>
+    <li class="nav-item ">
+      <button class="btn nav-link" id="botones-redes-2"><a class="nav-link" id="link-redes"  href="">Agendar Cita</a></button>
     </li>
-    <li class="nav-item">
+    <li class="nav-item ">
       <button class="btn nav-link" id="botones-redes"><a class="nav-link" id="link-redes"  href="https://www.facebook.com/Dentistas-en-Queretaro-745467918888663/"><i class="fa fa-facebook"></i></a></button>
     </li>
-    <li class="nav-item">  
+    <li class="nav-item ">  
       <button class="btn nav-link" id="botones-redes"><a class="nav-link" id="link-redes"  href="https://api.whatsapp.com/send?phone=44 23758253&text=Hola, Buen dia"><i class="fa fa-whatsapp"></i></a></button>
     </li>
   </nav>
@@ -153,28 +136,34 @@
       <div id="carta" class="col-xs-6 col-sm-4">
           <img src="https://res.cloudinary.com/consultorio-dental/image/upload/v1542915252/Icono_estetica.png" alt="">
           <div>Estetica Dentofacial</div>
+          <button class="btn" (click)="estetica()"id="boton-mas-ifo">MAS INFORMACION</button>
       </div>
       <div id="carta" class="col-xs-6 col-sm-4">
         <img src="https://res.cloudinary.com/consultorio-dental/image/upload/v1542915252/icono_brackets_Mesa_de_trabajo_1.png" alt="">
         <div>Ortodoncia</div>
+        <button class="btn" (click)="ortodoncia()"id="boton-mas-ifo">MAS INFORMACION</button>
     </div>
       <div id="carta" class="col-xs-6 col-sm-4">
         <img src="https://res.cloudinary.com/consultorio-dental/image/upload/v1542915252/edodoncia-01.png" alt="">
         <div>Endodoncia</div>
+        <button class="btn" (click)="endodoncia()"id="boton-mas-ifo">MAS INFORMACION</button>
     </div>
       
       
         <div id="carta" class="col-xs-6 col-sm-4">
           <img src="https://res.cloudinary.com/consultorio-dental/image/upload/v1542915252/cirugiamaxi-01.png" alt="">
           <div>Cirugia maxilofacial</div>
+          <button class="btn" (click)="maxilofacial()"id="boton-mas-ifo">MAS INFORMACION</button>
       </div>
         <div id="carta" class="col-xs-6 col-sm-4">
           <img src="https://res.cloudinary.com/consultorio-dental/image/upload/v1542915252/icono_implante-01.png" alt="">
-            <div>Implatologia y<br> endodoncia</div>
+          <div>Implatologia y<br> endodoncia</div>
+          <button class="btn" (click)="implantologia()"id="boton-mas-ifo">MAS INFORMACION</button>
       </div>
         <div id="carta" class="col-xs-6 col-sm-4">
           <img src="https://res.cloudinary.com/consultorio-dental/image/upload/v1542915252/icono_protesis-01.png" alt="">
-          <div>Protesis y <br> reabilitación </div>
+          <div>Protesis y <br> rehabilitación </div>
+          <button class="btn" (click)="rehabilitacion()"id="boton-mas-ifo">MAS INFORMACION</button>
         </div>
      
     </div>
@@ -231,9 +220,11 @@
         <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
      </agm-map>  
      
-     <div id="pie">
-      <button class="btn btn-light col-xs-6 col-xs-offet-3" id="boton-direccion-pie" type="submit"><a id="link-direccion-pie" href="https://www.google.com.mx/maps/place/Dra.+Jocelyn+Jim%C3%A9nez/@20.5969379,-100.3757306,18z/data=!4m5!3m4!1s0x0:0xe5f77b2b27ffa792!8m2!3d20.5985648!4d-100.3762375">Calzada Pathé 78 Col. Pathé, Qro.</a></button>
-     </div>
+     <div id="pie" class="col-xs-12 row">
+      <button class="btn btn-light col-sm-4" id="boton-direccion-pie" type="submit"><a id="link-direccion-pie" href="https://www.google.com.mx/maps/place/Dra.+Jocelyn+Jim%C3%A9nez/@20.5969379,-100.3757306,18z/data=!4m5!3m4!1s0x0:0xe5f77b2b27ffa792!8m2!3d20.5985648!4d-100.3762375">Calzada Pathé 78 Col. Pathé, Qro.</a></button>
+      <button class="btn btn-light col-sm-4" id="boton-direccion-pie" type="submit"><a id="link-direccion-pie" href="https://www.digitalmarketingqueretaro.com">Desarrollado por Marketing Digital Casanova</a></button>
+      <button class="btn btn-light col-sm-4" id="boton-direccion-pie" type="submit"><a id="link-direccion-pie" href="#">Programador Juan Casanova</a></button>    
+    </div>
   
      
 </body>

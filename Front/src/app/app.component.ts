@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {ComentariosService} from './services/comentarios.service'
 import { Comentario } from './models/Comentario';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

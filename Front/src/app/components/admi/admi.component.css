@@ -1,19 +1,78 @@
-#trazo{
-    width: 100%;
-    height: 10px;
-    background-color: rgb(178,171,96,1);
-    margin-top: 200px;
-}
-#comen{
-    margin-top: 2%;
-    margin-left: 12.5%;
-}
-.nombre-coment{
-    font-weight: bold;
-    font-size: 350%;
-    text-transform: uppercase;
+
+@media (min-width: 200px)
+{
+    #trazo{
+        width: 100%;
+        height: 10px;
+        background-color: rgb(178,171,96,1);
+        margin-top: 50%;
+    }
+    /* #comen{
+        margin-top: 2%;
+        margin-left: 12.5%;
+    }
+    .nombre-coment{
+        font-weight: bold;
+        font-size: 350%;
+        text-transform: uppercase;
+    }
+
+    .coment-coment{
+        font-size: 200%;
+    } */
+    #comentario{
+        padding-left: 25%;
+    }
 }
 
-.coment-coment{
-    font-size: 200%;
+@media (min-width: 768px)
+{
+    #trazo{
+        width: 100%;
+        height: 10px;
+        background-color: rgb(178,171,96,1);
+        margin-top: 30%;
+    }
+    /* #comen{
+        margin-top: 2%;
+        margin-left: 12.5%;
+    }
+    .nombre-coment{
+        font-weight: bold;
+        font-size: 350%;
+        text-transform: uppercase;
+    }
+
+    .coment-coment{
+        font-size: 200%;
+    } */
+    #comentario{
+        padding-left: 25%;
+    }
+}
+
+@media (min-width: 1024px)
+{
+    #trazo{
+        width: 100%;
+        height: 10px;
+        background-color: rgb(178,171,96,1);
+        margin-top: 8%;
+    }
+    /* #comen{
+        margin-top: 2%;
+        margin-left: 12.5%;
+    }
+    .nombre-coment{
+        font-weight: bold;
+        font-size: 350%;
+        text-transform: uppercase;
+    }
+
+    .coment-coment{
+        font-size: 200%;
+    } */
+    #comentario{
+        padding-left: 25%;
+    }
 }
